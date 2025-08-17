@@ -122,3 +122,43 @@ footer{
     margin: 1rem;
     text-align: end;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust base font size for smaller screens */
+  }
+
+  header {
+    height: 30vh; /* Reduce header height */
+  }
+
+  main {
+    flex-direction: column; /* Stack left and right sections */
+    align-items: center;
+    height: auto; /* Adjust height to content */
+    padding: 2rem; /* Add some padding */
+  }
+
+  .left,
+  .right {
+    width: 90%; /* Take up more screen width */
+    margin-bottom: 2rem; /* Add spacing between sections */
+  }
+
+  .number {
+    font-size: 4rem; /* Smaller number size */
+    width: 12rem;
+    padding: 2rem 0;
+  }
+
+  .guess {
+    width: 70%; /* Adjust input width */
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+
+  .message {
+    margin-bottom: 4rem; /* Reduce message margin */
+  }
+}
